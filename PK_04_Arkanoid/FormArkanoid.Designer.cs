@@ -34,16 +34,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBoard)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer1
+            // timer
             // 
             this.timer.Enabled = true;
             this.timer.Interval = 40;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // pictureBox1
+            // pictureBoxBoard
             // 
             this.pictureBoxBoard.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxBoard.Name = "pictureBox1";
+            this.pictureBoxBoard.Name = "pictureBoxBoard";
             this.pictureBoxBoard.Size = new System.Drawing.Size(800, 450);
             this.pictureBoxBoard.TabIndex = 0;
             this.pictureBoxBoard.TabStop = false;
@@ -55,9 +55,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBoxBoard);
             this.Name = "FormArkanoid";
-            this.Text = "Form1";
+            this.Text = "Arkanoid";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormArkanoid_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormArkanoid_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBoard)).EndInit();
             this.ResumeLayout(false);
 
